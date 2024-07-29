@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="icon" href="https://play-lh.googleusercontent.com/wemLyI6m-AyqLhLMmJhZK8yeYxA2tIbPjt8QSDEuz-qgoFpzDkjboQJvTkuQ93VMNf4=w240-h480-rw">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: white;
+            color: #020202;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header img {
+            width: 100px;
+            vertical-align: middle;
+        }
+        header h1 {
+            display: inline;
+            font-size: 2rem;
+            margin: 0;
+        }
+        nav {
+            background: white;
+            color: #0c0c0c;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .faq-section {
+            margin-bottom: 30px;
+        }
+        .faq-section h3 {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .faq-item h4 {
+            cursor: pointer;
+            margin: 0;
+            padding: 10px;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .faq-item p {
+            margin: 0;
+            padding: 10px;
+            display: none;
+            border-top: 1px solid #ddd;
+        }
+        .faq-item h4:hover {
+            background: #ddd;
+        }
+        /* footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://play-lh.googleusercontent.com/wemLyI6m-AyqLhLMmJhZK8yeYxA2tIbPjt8QSDEuz-qgoFpzDkjboQJvTkuQ93VMNf4=w240-h480-rw" width="100px">
+
+    </header>
+    
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <main>
+        <h2>Frequently Asked Questions (FAQ)</h2>
+
+        <div class="faq-section">
+            <h3>General Questions</h3>
+            <div class="faq-item">
+                <h4>What is SNITCH?</h4>
+                <p>SNITCH is your number one source for quality fashion products. We offer a wide range of apparel and accessories to cater to your fashion needs.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How do I contact customer service?</h4>
+                <p>You can contact our customer service via email at <a href="mailto:info@snitch.com">info@snitch.com</a> or call us at [phone number]. Our team is available from [hours of operation].</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h3>Orders and Payments</h3>
+            <div class="faq-item">
+                <h4>How do I place an order?</h4>
+                <p>To place an order, browse our products, add the desired items to your cart, and proceed to checkout. You will need to provide shipping details and payment information to complete your order.</p>
+            </div>
+            <div class="faq-item">
+                <h4>What payment methods do you accept?</h4>
+                <p>We accept various payment methods including credit/debit cards, PayPal, and other online payment gateways.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h3>Shipping and Delivery</h3>
+            <div class="faq-item">
+                <h4>What are the shipping options?</h4>
+                <p>We offer standard and express shipping options. Shipping times and costs vary based on your location and the shipping method selected at checkout.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How can I track my order?</h4>
+                <p>Once your order is shipped, you will receive a tracking number via email. You can use this number to track your order on our website or the courier’s website.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h3>Returns and Refunds</h3>
+            <div class="faq-item">
+                <h4>What is your return policy?</h4>
+                <p>We offer a 30-day return policy for unused and unworn items. To initiate a return, please contact our customer service team.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How do I get a refund?</h4>
+                <p>Refunds are processed once we receive and inspect your returned items. The refund will be credited back to your original payment method within [number of days] days.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- <footer>
+        <p>&copy; 2024 SNITCH. All rights reserved.</p>
+    </footer> -->
+
+    <script>
+        document.querySelectorAll('.faq-item h4').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
